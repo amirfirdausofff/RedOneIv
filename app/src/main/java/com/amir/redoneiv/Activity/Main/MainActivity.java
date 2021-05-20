@@ -77,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
                     if(active == fragment2){
                     }else{
                         fm.beginTransaction().show(fragment2).hide(active).commit();
+                        RewardFragment.getRewardList();
+                        RewardFragment.getUserRewardStatus();
                     }
                     active = fragment2;
                     return true;

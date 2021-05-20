@@ -25,5 +25,13 @@
         <item name="android:textSize">11dp</item>
     </style>
 
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/bottom_to_top</item>
+        <item name="android:windowExitAnimation">@anim/bottom_to_top_2</item>
+    </style>
+
+    <style name="dialogReward">
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+    </style>
 
 </resources>
